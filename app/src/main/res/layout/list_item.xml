@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,14 +20,16 @@
 
     <TextView
         android:id="@+id/latinTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:layout_height="19dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/namaTextView"
-        app:layout_constraintVertical_bias="0.31"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="Cygnus olor" />
 
     <ImageView
@@ -35,9 +37,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.454"
         app:srcCompat="@drawable/angsa" />
+
+    <TextView
+        android:id="@+id/jenisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/jenisText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/latinTextView"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
